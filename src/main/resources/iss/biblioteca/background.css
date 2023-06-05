@@ -1,0 +1,22 @@
+.bodybg{
+     -fx-background-image: url(library_idle.jpg);
+     -fx-background-size: 100% 100%;
+    -fx-opacity: 0.8
+ }
+.user_bg{
+    -fx-background-image: url(library_user1.jpg);
+    -fx-background-size: 100% 100%;
+    -fx-opacity: 0.8
+}
+.librarian_bg{
+    -fx-background-image: url(library_librarian.jpg);
+    -fx-background-size: 100% 100%;
+    -fx-opacity: 0.8
+}
+.solid-vbox {
+    -fx-background-color: #b4a8bb; /* Background color */
+    -fx-border-color: #aB9573; /* Border color */
+    -fx-border-width: 2px; /* Border width */
+    -fx-border-style: solid; /* Border style */
+    -fx-border-radius: 1px; /* Border radius */
+}

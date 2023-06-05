@@ -1,0 +1,7 @@
+.visible-text {
+    -fx-font-size: 32px; /* Font size */
+    -fx-font-weight: bold; /* Font weight */
+    -fx-font-style: italic; /* Font style */
+    -fx-padding: 5px; /* Padding */
+    -fx-effect: dropshadow(three-pass-box, rgba(0.7, 0.2, 0.3, 0.7), 2, 3, 1, 0); /* Drop shadow effect */
+}

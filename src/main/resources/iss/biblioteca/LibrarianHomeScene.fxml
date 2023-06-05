@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="758.0" styleClass="librarian_bg" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="iss.biblioteca.LibrarianHomeController">
+   <stylesheets>
+      <URL value="@background.css" />
+      <URL value="@buttons.css" />
+      <URL value="@text.css" />
+   </stylesheets>
+   <left>
+      <VBox prefHeight="480.0" prefWidth="772.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox prefHeight="485.0" prefWidth="758.0">
+               <children>
+                  <VBox prefHeight="434.0" prefWidth="758.0">
+                     <children>
+                        <TableView fx:id="bookView" opacity="0.93" prefHeight="348.0" prefWidth="362.0" styleClass="solid-vbox">
+                          <columns>
+                            <TableColumn prefWidth="164.0" text="Author" />
+                            <TableColumn prefWidth="216.79998779296875" text="Title" />
+                          </columns>
+                           <VBox.margin>
+                              <Insets left="10.0" right="17.0" top="50.0" />
+                           </VBox.margin>
+                        </TableView>
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <Button fx:id="ReturnButton" mnemonicParsing="false" onAction="#onReturnButtonClicked" prefHeight="43.0" prefWidth="125.0" styleClass="custom-button" text="Return book">
+                                 <HBox.margin>
+                                    <Insets left="125.0" top="5.0" />
+                                 </HBox.margin>
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="480.0" prefWidth="754.0">
+                     <children>
+                        <TableView fx:id="userView" opacity="0.93" prefHeight="338.0" prefWidth="368.0" styleClass="solid-vbox">
+                          <columns>
+                            <TableColumn prefWidth="173.60002732276917" text="Name" />
+                            <TableColumn minWidth="0.0" prefWidth="187.19996643066406" text="Number of days late" />
+                          </columns>
+                           <VBox.margin>
+                              <Insets left="12.0" right="5.0" top="50.0" />
+                           </VBox.margin>
+                        </TableView>
+                        <HBox prefHeight="49.0" prefWidth="378.0">
+                           <children>
+                              <Button fx:id="BanButton" mnemonicParsing="false" onAction="#onBanButtonClicked" prefHeight="43.0" prefWidth="125.0" styleClass="custom-button" text="Ban user">
+                                 <HBox.margin>
+                                    <Insets left="125.0" top="5.0" />
+                                 </HBox.margin>
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="38.0" prefWidth="378.0">
+                           <children>
+                              <Button fx:id="BackButton" mnemonicParsing="false" onAction="#onBackButtonClicked" prefHeight="34.0" prefWidth="54.0" scaleX="0.8" scaleY="0.8" text="BACK">
+                                 <HBox.margin>
+                                    <Insets left="310.0" top="5.0" />
+                                 </HBox.margin>
+                              </Button>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </left>
+</BorderPane>

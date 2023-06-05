@@ -1,0 +1,15 @@
+.custom-button:hover {
+    -fx-background-color: #a980b9; /* Background color on hover */
+}
+.custom-button {
+    -fx-background-color: #a498db; /* Background color */
+    -fx-text-fill: black; /* Text color */
+    -fx-font-style: bold;
+    -fx-font-family: "Georgia"; /* Font family */
+    -fx-padding: 10px 20px; /* Padding */
+    -fx-background-radius: 5px; /* Border radius */
+    -fx-border-color: #a980b9; /* Border color */
+    -fx-border-width: 2px; /* Border width */
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.3), 3, 0, 2, 0); /* Drop shadow effect */
+    -fx-cursor: hand; /* Cursor on hover */
+}
